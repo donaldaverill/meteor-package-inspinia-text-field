@@ -1,0 +1,35 @@
+<head>
+  <title>Inspinia Text Field Example</title>
+</head>
+
+<body>
+  <h1>Inspinia Text Field Example!</h1>
+  Inspinia styles and Bootstrap are not set up for the example,
+  but the functionality is the same.
+  <br>
+  <br>
+  {{> formTemplate}}
+</body>
+
+<template name="formTemplate">
+  <form id="someForm">
+    {{> inspiniaTextField
+      type='text'
+      field='name'
+      label='First Name'
+      instructions='First Name'
+      value=(formValue 'name')
+      onChange=fieldChanged
+    }}
+    {{> inspiniaTextField
+      type='number'
+      field='sales'
+      label='Total Sales'
+      prefix='$'
+      min=0
+      value=(formValue 'sales')
+      onChange=fieldChanged
+    }}
+    <input type="submit">
+  </form>
+</template>
