@@ -1,4 +1,5 @@
-# Blaze text field component for the Inspinia admin theme.
+# Blaze text field component for the [Inspinia](https://wrapbootstrap.com/theme/inspinia-responsive-admin-theme-WB0R5L90S) admin theme.
+**Note:** Must include styles separately.
 ### Example:
 ```html
 <!-- formTemplate.html -->
@@ -57,7 +58,7 @@ if (Meteor.isClient) {
   });
 }
 ```
-See full example in the repository.
+See [full example in the repository](https://github.com/fourquet/meteor-package-inspinia-text-field/tree/master/example).
 ##### Arguments:
 - *field*, String, Required.
   - The name of the field.
