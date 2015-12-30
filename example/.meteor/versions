@@ -21,7 +21,7 @@ ecmascript@0.1.6
 ecmascript-runtime@0.2.6
 ejson@1.0.7
 es5-shim@4.1.14
-fourquet:inspinia-text-field@0.0.1
+fourquet:inspinia-text-field@0.0.2
 geojson-utils@1.0.4
 hot-code-push@1.0.0
 html-tools@1.0.5

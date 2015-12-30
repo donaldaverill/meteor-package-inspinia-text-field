@@ -1,6 +1,6 @@
 Package.describe({
   name: 'fourquet:inspinia-text-field',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'Blaze text input component to use with the Inspinia Bootstrap Admin Theme',
   git: 'https://github.com/fourquet/meteor-package-inspinia-text-field',
   documentation: 'README.md',

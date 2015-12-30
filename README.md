@@ -62,18 +62,18 @@ See [full example in the repository](https://github.com/fourquet/meteor-package-
 ##### Arguments:
 - *field*, String, Required.
   - The name of the field.
-- *type*, String, Required unless *static* is true.
+- *type*, String, Required unless *static* is `true`.
   - The type of the input field such as text, email, password or number.
 - *value*, String, Optional.
   - The value of the input field.
 - *onChange*, Function, Optional.
   - Function to run on change and keyup events.
-- *label*, String, Required unless *skipLabel* is true.
+- *label*, String, Required unless *skipLabel* is `true`.
   - The label for the input field.
 - *skipLabel*, Boolean, Optional.
-  - If true, the label will not be displayed. Additionally,  *label* will not be required.
+  - If `true`, the label will not be displayed. Additionally,  *label* will not be required.
 - *required*, Boolean, Optional.
-  - True if the input field should be required for the form.
+  - `true` if the input field should be required for the form.
 - *disabled*, Boolean, Optional.
   - Sets the input field to disabled.
 - *instructions*, String, Optional.
@@ -89,6 +89,12 @@ See [full example in the repository](https://github.com/fourquet/meteor-package-
 - *helpText*, String, Optional.
   - Helpful information to display below the text field.
 - *static*, Boolean, Optional.
-  - If true, sets the input to hidden. A *label* can still be set as well as an optional *content* argument to replace where the input would go.
+  - If `true`, sets the input to hidden. A *label* can still be set as well as an optional *content* argument to replace where the input would go.
 - *content*, String, Optional.
-  - If *static* is true, will replace the input with this text.
+  - If *static* is `true`, will replace the input with this text.
+- *success*, Boolean, Optional
+  - Displays message below textField but only if the *success* is `false` and *submitted* is `true` and *error* message exists.
+- *submitted*, Boolean, Optional
+  - If *success* is `true`, an error message may be displayed below the textField.
+- *errorMessage*, String, Optional
+  - An error message to be displayed if *success* is `false` and *submitted* is `true`.
